@@ -1,11 +1,12 @@
-module aurora_descrambler(/*AUTOARG*/
+module descrambler(/*AUTOARG*/
    // Outputs
-   aurora_descrambler_out,
+   descrambler_out,
    // Inputs
-   aurora_descrambler_in
+   clk, descrambler_in
    );
-   input [0:63] aurora_descrambler_in;
-   output [0:63] aurora_descrambler_out;
+   input clk;
+   input [63:0] descrambler_in;
+   output [63:0] descrambler_out;
 
 
 endmodule
